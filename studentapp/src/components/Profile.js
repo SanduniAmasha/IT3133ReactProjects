@@ -1,10 +1,11 @@
 export default function Profile(props){
+    console.log(props.stu)
     return(
         <>
         <table>
             <tr>
                 <td rowSpan={7}>
-                    <img className='profile' src={require('../assets/img/'+props.stu.profilePic)} alt="Profile picture"/>
+                    <img className='profile' src={require('../assets/img/'+props.stu.profilePic)} alt="Profile_picture"/>
                 </td>
                 <td>ID {props.stu.studentId}</td>
             </tr>
